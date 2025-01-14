@@ -9,6 +9,162 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <aside>
+        <h2>
+            Dashboard
+        </h2>
+        <nav class="dashboard-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/profile" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="/messages" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="/history" class="nav-link">History</a></li>
+                <li class="nav-item"><a href="/tasks" class="nav-link">Tasks</a></li>
+                <li class="nav-item"><a href="/communities" class="nav-link">Communities</a></li>
+            </ul>
+        </nav>
+        <nav class="secondary-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/settings" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="/support" class="nav-link">Support</a></li>
+                <li class="nav-item"><a href="/privacy" class="nav-link">Privacy</a></li>
+            </ul>
+        </nav>
+    </aside>
     
+    <header>
+        <form class="search-bar" action="/search" method="GET">
+            <button type="submit" class="search-button">🔍</button>
+            <input type="search" name="query" class="search-input" aria-label="Search">
+        </form>
+        <div class="profile-section">
+            <button class="notification-btn" aria-label="Notifications">🔔</button>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <span class="profile-name">Morgan Oakley</span>
+        </div>
+        <div class="profile-greeting">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <span class="greeting-message">Hi there, Morgan Oakley</span>
+        </div>
+        <div class="header-actions">
+            <button class="action-btn new-btn" aria-label="Create New">New</button>
+            <button class="action-btn upload-btn" aria-label="Upload File">Upload</button>
+            <button class="action-btn share-btn" aria-label="Share Content">Share</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h2>Your Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Super Cool Project</h3>
+                    <p class="project-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="project-actions">
+                        <button class="action-btn" aria-label="Edit Project">✏️</button>
+                        <button class="action-btn" aria-label="Delete Project">🗑️</button>
+                        <button class="action-btn" aria-label="Share Project">🔗</button>
+                    </div>
+                </div>
+            
+            
+                <div class="project-card">
+                    <h3 class="project-title">Less Cool Project</h3>
+                    <p class="project-text">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                    <div class="project-actions">
+                        <button class="action-btn" aria-label="Edit Project">✏️</button>
+                        <button class="action-btn" aria-label="Delete Project">🗑️</button>
+                        <button class="action-btn" aria-label="Share Project">🔗</button>
+                    </div>
+                </div>
+            
+            
+                <div class="project-card">
+                    <h3 class="project-title">Imposible App</h3>
+                    <p class="project-text">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                    <div class="project-actions">
+                        <button class="action-btn" aria-label="Edit Project">✏️</button>
+                        <button class="action-btn" aria-label="Delete Project">🗑️</button>
+                        <button class="action-btn" aria-label="Share Project">🔗</button>
+                    </div>
+                </div>
+            
+            
+                <div class="project-card">
+                    <h3 class="project-title">Easy Peasy App</h3>
+                    <p class="project-text">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan. aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                    <div class="project-actions">
+                        <button class="action-btn" aria-label="Edit Project">✏️</button>
+                        <button class="action-btn" aria-label="Delete Project">🗑️</button>
+                        <button class="action-btn" aria-label="Share Project">🔗</button>
+                    </div>
+                </div>
+            
+            
+                <div class="project-card">
+                    <h3 class="project-title">Ad blocker</h3>
+                    <p class="project-text">Quisque eget rutrum nisi. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                    <div class="project-actions">
+                        <button class="action-btn" aria-label="Edit Project">✏️</button>
+                        <button class="action-btn" aria-label="Delete Project">🗑️</button>
+                        <button class="action-btn" aria-label="Share Project">🔗</button>
+                    </div>
+                </div>
+            
+            
+                <div class="project-card">
+                    <h3 class="project-title">Money Maker</h3>
+                    <p class="project-text">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                    <div class="project-actions">
+                        <button class="action-btn" aria-label="Edit Project">✏️</button>
+                        <button class="action-btn" aria-label="Delete Project">🗑️</button>
+                        <button class="action-btn" aria-label="Share Project">🔗</button>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="announcements-section">
+            <h2>Announcements</h2>
+            <div class="announcements-grid">
+                <div class="announcement-card">
+                    <h3>Site Maintenance</h3>
+                    <p>Vestibulum condimentum tellus lacus in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                </div>
+                <div class="announcement-card">
+                    <h3>Community Share Day</h3>
+                    <p>Nam vel lectus tincidunt, rutrum nulla eu omare libero. Aliquam dictum accumsan porttitor.</p>
+                </div>
+                <div class="announcement-card">
+                    <h3>Community Share Day</h3>
+                    <p>Nam vel lectus tincidunt, rutrum nulla eu omare libero. Aliquam dictum accumsan porttitor.</p>
+                </div>
+            </div>
+        </section>
+        <section class="trending-section">
+            <h2>Trending</h2>
+            <div class="trending-grid">
+                <div class="user-card">
+                    <img src="user-profile-01.jpg" alt="Profile Picture">
+                    <h3>@tegan</h3>
+                    <p>World Peace Builder</p>
+                </div>
+                <div class="user-card">
+                    <img src="user-profile-02.jpg" alt="Profile Picture">
+                    <h3>@morgan</h3>
+                    <p>Super Cool Project</p>
+                </div>
+                <div class="user-card">
+                    <img src="user-profile-03.jpg" alt="Profile Picture">
+                    <h3>@kendall</h3>
+                    <p>Life Changing App</p>
+                </div>
+                <div class="user-card">
+                    <img src="user-profile-04.jpg" alt="Profile Picture">
+                    <h3>@alex</h3>
+                    <p>No traffic Maker</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
