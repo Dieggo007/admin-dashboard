@@ -9,7 +9,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <aside>
+
+    <header class="dashboard-header">
+        <form class="search-bar" action="/search" method="GET">
+            <button type="submit" class="search-button">🔍</button>
+            <input type="search" name="query" class="search-input" aria-label="Search">
+        </form>
+        <div class="profile-section">
+            <button class="notification-btn" aria-label="Notifications">🔔</button>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <span class="profile-name">Morgan Oakley</span>
+        </div>
+        <div class="profile-greeting">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <span class="greeting-message">Hi there, Morgan Oakley</span>
+        </div>
+        <div class="header-actions">
+            <button class="action-btn new-btn" aria-label="Create New">New</button>
+            <button class="action-btn upload-btn" aria-label="Upload File">Upload</button>
+            <button class="action-btn share-btn" aria-label="Share Content">Share</button>
+        </div>
+    </header>
+    
+    <aside class="dashboard-sidebar">
         <h2>
             Dashboard
         </h2>
@@ -31,29 +53,8 @@
             </ul>
         </nav>
     </aside>
-    
-    <header>
-        <form class="search-bar" action="/search" method="GET">
-            <button type="submit" class="search-button">🔍</button>
-            <input type="search" name="query" class="search-input" aria-label="Search">
-        </form>
-        <div class="profile-section">
-            <button class="notification-btn" aria-label="Notifications">🔔</button>
-            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
-            <span class="profile-name">Morgan Oakley</span>
-        </div>
-        <div class="profile-greeting">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
-            <span class="greeting-message">Hi there, Morgan Oakley</span>
-        </div>
-        <div class="header-actions">
-            <button class="action-btn new-btn" aria-label="Create New">New</button>
-            <button class="action-btn upload-btn" aria-label="Upload File">Upload</button>
-            <button class="action-btn share-btn" aria-label="Share Content">Share</button>
-        </div>
-    </header>
 
-    <main>
+    <main class="dashboard-main">
         <section class="projects-section">
             <h2>Your Projects</h2>
             <div class="projects-grid">
